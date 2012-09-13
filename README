@@ -3,4 +3,4 @@ as long as the database has a main,objects,log_entry and log_code table.
 
 configuration is in config.php
 
-preview: http://zahndy.dyndns.org/dayz/
+example: http://zahndy.dyndns.org/dayz/
