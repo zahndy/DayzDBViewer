@@ -72,8 +72,10 @@ while ($row= mysqli_fetch_assoc($result))
 	
 	function formatinventory($inventory)
 	{
-	 	$clean = str_replace(array("[", "]", '"',","),array("","","","\\n"), $inventory);
-		return "<a href=\"javascript:alert('". $clean ."')\"><img class='tblimg' src='inventory.png' height='42' width='42'/></a>";
+	 	$clean = str_replace(array("[", "]", '"',",,"),array("","","",","), $inventory);
+		$clean2 = str_replace(array(",,,,",",,,",",,"),array(",",",",","), $clean);
+		$clean3 = str_replace(array(","),array("\\n"), $clean2);
+		return "<a href=\"javascript:alert('". $clean3 ."')\"><img class='tblimg' src='inventory.png' height='42' width='42'/></a>";
 	}
 	
 	function formatbackpack($inventory)
@@ -87,8 +89,10 @@ while ($row= mysqli_fetch_assoc($result))
 		"[7]","7,","[7","7]",
 		"[8]","8,","[8","8]",
 		"[9]","9,","[9","9]",), "", $inventory); // not showing the amount of items
-	 	$clean2 = str_replace(array("[", "]", '"',","),array("","","","\\n"), $clean1);
-		return "<a href=\"javascript:alert('". $clean2 ."')\"><img class='tblimg' src='DZ_Backpack_EP1.png' height='42' width='42'/></a>";
+	 	$clean2 = str_replace(array("[", "]", '"',",,",",,,",",,,,"),array("","","",",",",",","), $clean1);
+		$clean3 = str_replace(array(",,,,",",,,",",,"),array(",",",",","), $clean2);
+		$clean4 = str_replace(array(","),array("\\n"), $clean3);
+		return "<a href=\"javascript:alert('". trim($clean4,"\n") ."')\"><img class='tblimg' src='DZ_Backpack_EP1.png' height='42' width='42'/></a>";
 	}
 	
 	function formatmedical($medick)
