@@ -1,0 +1,84 @@
+body{
+background: url(bg.jpg) no-repeat fixed;
+font-size: 14px;
+color: #DDD;
+font-family: Verdana, Geneva, sans-serif;
+margin:0px;
+}
+
+.nobg{
+background:none; 
+overflow-y:scroll; 
+overflow-x:hidden;
+}
+
+#bannerlogo{ 
+top:15px;
+position:absolute;
+right:0px;
+}
+
+#header{
+height:80px;
+background-color:rgba(0,0,0,0.7);
+box-shadow: 0px 0px 15px 2px rgba(255, 0, 0, 0.30);
+-o-box-shadow: 0px 0px 15px 2px rgba(255, 0, 0, 0.30);
+-webkit-box-shadow: 0px 0px 15px 2px rgba(255, 0, 0, 0.30);
+-moz-box-shadow: 0px 0px 15px 2px rgba(255, 0, 0, 0.30);
+margin-bottom:20px;
+}
+
+table{
+width:100%; 
+text-align:center; 
+border:0px solid grey; 
+text-shadow: 1px 1px 20px red;
+}
+
+#frame{
+width:100%; 
+height: 708px; 
+border:0px solid grey;  
+}
+
+.button{
+color:red; 
+text-decoration:none; 
+font-size:18; 
+text-shadow: 1px 1px 2px red;
+margin-left:15px;
+margin-right:15px;
+}
+
+.button:link    {color:red;}
+.button:visited {color:red;}
+.button:hover   {
+color:#F78181; 
+text-shadow: 1px 1px 10px red, 1px 1px 10px red;
+}
+.button:active  {color:red;}
+
+#menu{ 
+margin-top:16px;
+margin-bottom:0px;
+}
+
+#title{
+margin-bottom:0px;
+font-size: 30px;
+font-weight:bold;
+font-family: Verdana, Geneva, sans-serif;
+color: #DDD;
+text-shadow: 1px 1px 1px rgba(128, 128, 128, 1),2px 2px 1px rgba(128, 128, 128, 1),3px 3px 10px rgba(160, 0, 0, 1),3px 3px 50px rgba(160, 0, 0, 0.8);
+}
+
+#logwindow{
+height:600px; 
+overflow-y:scroll; 
+width:500px; 
+margin-left:10px; 
+color: #DDD; 
+text-shadow: 1px 1px 10px black;
+}
+
+#noscroll{overflow:hidden;}
