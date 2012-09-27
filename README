@@ -1,6 +1,8 @@
-DayZ DB Viewer is a php website that displays the users, objects/vehicles and log for DayZ servers with a local database (Saintly/bliss/Sanctuary) etc
+DayZ DB Viewer is a php website that displays the users, objects, a vehicles map and log for private DayZ servers with a local database (Saintly/bliss/Sanctuary) etc
 as long as the database has a main,objects,log_entry and log_code table.
 
 configuration is in config.php
 
 example: http://zahndy.dyndns.org/dayz/
+
+todo: drag scrolling with inertia for the vehicles map
